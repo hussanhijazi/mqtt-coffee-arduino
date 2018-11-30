@@ -19,7 +19,7 @@ void setup_wifi() {
   Serial.println();
   Serial.print("Conectando-se a rede WiFi: ");
   Serial.println(ssid);
-  
+
   WiFi.begin(ssid, password);
 
   while (WiFi.status() != WL_CONNECTED)
@@ -109,7 +109,7 @@ void loop() {
 
   if (!client.loop())
     client.connect("ESP8266Client2608");
-    
+
   client.loop();
 }
 
